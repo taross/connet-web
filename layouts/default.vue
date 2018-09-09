@@ -1,5 +1,6 @@
 <template>
   <div>
+    <page-header/>
     <nuxt/>
   </div>
 </template>
@@ -14,6 +15,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: #f0f0f0;
 }
 
 *, *:before, *:after {
@@ -51,3 +53,9 @@ html {
 }
 </style>
 
+<script>
+  import PageHeader from "../components/pageHeader";
+  export default {
+    components: {PageHeader}
+  }
+</script>

@@ -33,8 +33,15 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor: ['element-ui']
   },
-  plugins: [{ src: '~/plugins/firebaseInit' }]
+  plugins: [
+    { src: '~/plugins/firebaseInit' },
+    '~plugins/element-ui'
+  ],
+  css: [
+    'element-ui/lib/theme-chalk/index.css'
+  ]
 }
 
